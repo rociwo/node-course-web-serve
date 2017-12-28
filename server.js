@@ -49,6 +49,15 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  //res.send('About page content');
+  res.render('projects.hbs', {
+    pageTitle: 'Portfolio Page',
+    contentPage: 'Portfolio content'
+  });
+});
+
+
 // /bad - send back json with errorMessage
 
 app.get('/bad', (req, res) => {
